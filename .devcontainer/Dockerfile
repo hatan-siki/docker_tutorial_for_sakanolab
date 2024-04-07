@@ -11,5 +11,5 @@ RUN apt-get update && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN python -m pip install --upgrade pip
-RUN python -m pip install numpy scikit-learn matplotlib
+RUN pip install --upgrade pip
+RUN pip install numpy scikit-learn matplotlib
