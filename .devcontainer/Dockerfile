@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM python:3.11-bullseye
 USER root
 
 RUN mkdir -p /root/workspace
@@ -8,8 +8,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-    python3.11-dev \
-    python3-pip \
     python3-tk && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
