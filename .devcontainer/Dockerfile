@@ -1,6 +1,9 @@
 FROM ubuntu:22.04
 USER root
 
+RUN mkdir -p /root/workspace
+WORKDIR /root/workspace
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
