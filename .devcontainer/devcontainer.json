@@ -1,0 +1,25 @@
+{
+	"name": "python 3.11",
+	"build": { "dockerfile": "Dockerfile" },
+	"runArgs": ["--init", "--name", "py_workbench"],
+	"customizations": {
+		"vscode": {
+			"settings": {
+                "diffEditor.ignoreTrimWhitespace": false,
+				"explorer.openEditors.visible": 0,
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+				"markdown-preview-enhanced.scrollSync": false
+				// "notebook.lineNumbers": "on"
+			},
+			"extensions": [
+				"oderwat.indent-rainbow",
+				"yzhang.markdown-all-in-one",
+				"yzane.markdown-pdf",
+				"shd101wyy.markdown-preview-enhanced",
+				"donjayamanne.python-extension-pack"
+				// "ms-toolsai.jupyter",
+			]
+	  	}
+	}
+}
